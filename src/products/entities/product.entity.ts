@@ -11,8 +11,6 @@ export class Product {
   price: number;
   @Column('int')
   countSeal: number;
-  // @Column('uuid')
-  // provider: string;
   @ManyToOne(() => Provider, (provider) => provider.products)
   provider: Provider
 }
